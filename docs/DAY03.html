@@ -1,0 +1,333 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>DAY03(2019-10-31) · 物联网监测系统文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="nilaoda">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="DAY04.html" />
+    
+    
+    <link rel="prev" href="DAY02.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    项目简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <span>
+            
+                    
+                    开发日志
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="DAY01.html">
+            
+                <a href="DAY01.html">
+            
+                    
+                    DAY01(2019-10-29)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="DAY02.html">
+            
+                <a href="DAY02.html">
+            
+                    
+                    DAY02(2019-10-30)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.1.3" data-path="DAY03.html">
+            
+                <a href="DAY03.html">
+            
+                    
+                    DAY03(2019-10-31)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="DAY04.html">
+            
+                <a href="DAY04.html">
+            
+                    
+                    DAY04(2019-11-01)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >DAY03(2019-10-31)</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x6A21;&#x5757;&#x9700;&#x6C42;&#x5206;&#x6790;">&#x6A21;&#x5757;&#x9700;&#x6C42;&#x5206;&#x6790;</h2>
+<p>&#x5907;&#x4EFD;&#x6A21;&#x5757;&#xFF0C;&#x5F53;&#x5165;&#x5E93;&#x5931;&#x8D25;&#x65F6;&#xFF0C;&#x5C06;&#x672A;&#x5165;&#x5E93;&#x7684;&#x6570;&#x636E;&#x4FDD;&#x5B58;&#x5230;&#x672C;&#x5730;&#x6587;&#x4EF6;&#x4E2D;&#x3002;  </p>
+<p>&#x91C7;&#x96C6;&#x6A21;&#x5757;&#x6BCF;&#x9694;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#x4F1A;&#x4ECE;&#x6587;&#x4EF6;&#x4E2D;&#x8BFB;&#x53D6;&#x6570;&#x636E;&#xFF0C;&#x8BFB;&#x53D6;&#x7ED3;&#x675F;&#x540E;&#x5C06;&#x5F53;&#x524D;&#x884C;&#x53F7;&#x6216;&#x5176;&#x4ED6;&#x7D22;&#x5F15;&#x4FE1;&#x606F;&#x8C03;&#x7528;&#x5907;&#x4EFD;&#x6A21;&#x5757;&#x5B58;&#x5728;&#x672C;&#x5730;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x5728;&#x4E0B;&#x6B21;&#x8BFB;&#x53D6;&#x65F6;&#x4ECE;&#x672C;&#x5730;&#x6587;&#x4EF6;&#x4E2D;&#x62FF;&#x5230;&#x7D22;&#x5F15;&#xFF0C;&#x4ECE;&#x6307;&#x5B9A;&#x4F4D;&#x7F6E;&#x7EE7;&#x7EED;&#x8BFB;&#x53D6;&#x5185;&#x5BB9;&#x3002;</p>
+<h2 id="&#x6838;&#x5FC3;&#x529F;&#x80FD;&#x5B9E;&#x73B0;">&#x6838;&#x5FC3;&#x529F;&#x80FD;&#x5B9E;&#x73B0;</h2>
+<p>&#x5E8F;&#x5217;&#x5316;&#x5BF9;&#x8C61;&#x5230;&#x672C;&#x5730;&#x6587;&#x4EF6;</p>
+<pre class="language-"><code class="lang-java"><span class="token class-name">Object</span> o <span class="token operator">=</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">;</span>
+<span class="token keyword">try</span> <span class="token punctuation">(</span><span class="token class-name">ObjectOutputStream</span> oos <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ObjectOutputStream</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">FileOutputStream</span><span class="token punctuation">(</span>fileName<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    oos<span class="token punctuation">.</span><span class="token function">writeObject</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">Exception</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    e<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x4ECE;&#x672C;&#x5730;&#x6587;&#x4EF6;&#x53CD;&#x5E8F;&#x5217;&#x5316;</p>
+<pre class="language-"><code class="lang-java"><span class="token class-name">Object</span> o <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+<span class="token keyword">try</span> <span class="token punctuation">(</span><span class="token class-name">ObjectInputStream</span> ois <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ObjectInputStream</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">FileInputStream</span><span class="token punctuation">(</span>fileName<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    o <span class="token operator">=</span> ois<span class="token punctuation">.</span><span class="token function">readObject</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">Exception</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    e<span class="token punctuation">.</span><span class="token function">printStackTrace</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="&#x7279;&#x6B8A;&#x77E5;&#x8BC6;&#x70B9;&#x590D;&#x4E60;">&#x7279;&#x6B8A;&#x77E5;&#x8BC6;&#x70B9;&#x590D;&#x4E60;</h2>
+<h2 id="&#x76F8;&#x5173;&#x77E5;&#x8BC6;&#x70B9;&#x590D;&#x4E60;">&#x76F8;&#x5173;&#x77E5;&#x8BC6;&#x70B9;&#x590D;&#x4E60;</h2>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="DAY02.html" class="navigation navigation-prev " aria-label="Previous page: DAY02(2019-10-30)">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="DAY04.html" class="navigation navigation-next " aria-label="Next page: DAY04(2019-11-01)">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"DAY03(2019-10-31)","level":"2.1.3","depth":2,"next":{"title":"DAY04(2019-11-01)","level":"2.1.4","depth":2,"path":"DAY04.md","ref":"DAY04.md","articles":[]},"previous":{"title":"DAY02(2019-10-30)","level":"2.1.2","depth":2,"path":"DAY02.md","ref":"DAY02.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","prism","-highlight","prism-themes","-sharing","sharing-plus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"github":{"url":"https://github.com/nilaoda"},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"prism-themes":{},"sharing":{"qq":true,"all":["google","facebook","weibo","twitter","qq","qzone","linkedin","pocket"],"douban":false,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"nilaoda","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"物联网监测系统文档","language":"zh-hans","gitbook":"3.2.3","description":"物联网监测系统文档"},"file":{"path":"DAY03.md","mtime":"2019-10-31T14:56:17.636Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-05T07:12:42.858Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
