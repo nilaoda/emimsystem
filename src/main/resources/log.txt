@@ -1,0 +1,42 @@
+[INFO ] 2019-11-04 14:30:42,778 method:LogImpl.info(LogImpl.java:18)
+将本次读取行号(429)记录到本地文件
+[DEBUG] 2019-11-04 14:30:42,784 method:LogImpl.debug(LogImpl.java:13)
+温度数据：167条；湿度数据：167条；二氧化碳数据：0条；光照强度数据：262条.
+[INFO ] 2019-11-04 15:46:44,222 method:LogImpl.info(LogImpl.java:18)
+将本次读取行号(429)记录到本地文件
+[DEBUG] 2019-11-04 15:46:44,230 method:LogImpl.debug(LogImpl.java:13)
+温度数据：167条；湿度数据：167条；二氧化碳数据：0条；光照强度数据：262条.
+[INFO ] 2019-11-04 15:48:56,803 method:LogImpl.info(LogImpl.java:18)
+将本次读取行号(429)记录到本地文件
+[DEBUG] 2019-11-04 15:48:56,811 method:LogImpl.debug(LogImpl.java:13)
+温度数据：167条；湿度数据：167条；二氧化碳数据：0条；光照强度数据：262条.
+[INFO ] 2020-01-05 14:43:11,024 method:LogImpl.info(LogImpl.java:17)
+服务器开始监听
+[INFO ] 2020-01-05 14:43:18,131 method:LogImpl.info(LogImpl.java:17)
+将本次读取行号(20)记录到本地文件
+[DEBUG] 2020-01-05 14:43:18,150 method:LogImpl.debug(LogImpl.java:12)
+温度数据：20条；湿度数据：20条；二氧化碳数据：0条；光照强度数据：0条.
+[DEBUG] 2020-01-05 14:43:18,243 method:LogImpl.debug(LogImpl.java:12)
+2020-01-05 14:43:18 接收到environments共 40 条
+[INFO ] 2020-01-05 14:43:18,244 method:LogImpl.info(LogImpl.java:17)
+开始插入数据
+[DEBUG] 2020-01-05 14:43:18,547 method:LogImpl.debug(LogImpl.java:12)
+insert into e_detail_19 values (?,?,?,?,?,?,?,?,?,?)
+[INFO ] 2020-01-05 14:43:18,689 method:LogImpl.info(LogImpl.java:17)
+已插入
+[INFO ] 2020-01-05 15:05:04,984 method:top.nilaoda.environment.util.LogImpl.info(LogImpl.java:17)
+服务器开始监听
+[INFO ] 2020-01-05 15:05:09,913 method:top.nilaoda.environment.util.LogImpl.info(LogImpl.java:17)
+将本次读取行号(20)记录到本地文件
+[DEBUG] 2020-01-05 15:05:09,926 method:top.nilaoda.environment.util.LogImpl.debug(LogImpl.java:12)
+温度数据：20条；湿度数据：20条；二氧化碳数据：0条；光照强度数据：0条.
+[DEBUG] 2020-01-05 15:05:10,020 method:top.nilaoda.environment.util.LogImpl.debug(LogImpl.java:12)
+2020-01-05 15:05:10 接收到environments共 40 条
+[INFO ] 2020-01-05 15:05:10,021 method:top.nilaoda.environment.util.LogImpl.info(LogImpl.java:17)
+开始插入数据
+[ERROR] 2020-01-05 15:05:10,248 method:top.nilaoda.environment.util.LogImpl.error(LogImpl.java:27)
+异常，回滚事务
+[INFO ] 2020-01-05 15:05:10,248 method:top.nilaoda.environment.util.LogImpl.info(LogImpl.java:17)
+备份数据...
+[INFO ] 2020-01-05 15:05:10,255 method:top.nilaoda.environment.util.LogImpl.info(LogImpl.java:17)
+备份成功:EMIS_backup.data

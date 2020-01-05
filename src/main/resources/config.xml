@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<woss>
+	
+	<!-- 网络模块(服务器) -->
+	<server class="top.nilaoda.environment.server.ServerImpl">
+		<!-- 端口号 -->
+		<port>8888</port>
+	</server>
+	
+	<!-- 网络模块(客户端) -->
+	<client class="top.nilaoda.environment.client.ClientImpl">
+		<!-- 服务器IP -->
+		<ip>127.0.0.1</ip>
+		<!-- 端口号 -->
+		<port>8888</port>
+		<!-- 备份文件名称 -->
+		<backupFile>EMIS_backup.data</backupFile>
+	</client>
+	
+	<!-- 入库模块 -->
+	<dbstore class="top.nilaoda.environment.server.DBStoreImpl">
+		<!-- 驱动类名 -->
+		<driver>oracle.jdbc.driver.OracleDriver</driver>
+		<!-- 数据库url -->
+		<url>jdbc:oracle:thin:@localhost:1521:xe</url>
+		<!-- 数据库用户名 -->
+		<user>xxx</user>
+		<!-- 数据库密码 -->
+		<password>xxx</password>
+		<!-- 备份文件名称 -->
+		<backupFile>dbstore.bak</backupFile>
+	</dbstore>
+	
+	<!-- 采集模块 -->
+	<gather class="top.nilaoda.environment.client.GatherImpl">
+		<!-- 原始数据文件路径 -->
+		<src-file>src/main/resources/data_temp.txt</src-file>
+		<!-- 备份文件名称 -->
+		<backupFile>EMIS_linenum.data</backupFile>
+	</gather>
+	
+	<!-- 日志模块 -->
+	<logger class="top.nilaoda.environment.util.LogImpl">
+		<!-- Log4j配置文件路径 -->
+		<log-properties>src/main/resources/log4j.properties</log-properties>
+	</logger>
+	
+	<!-- 备份模块 -->
+	<backup class="top.nilaoda.environment.util.BackupImpl">
+		<!-- 备份文件路径 -->
+		<backupPath>src/main/resources</backupPath>
+	</backup>
+	
+</woss>
